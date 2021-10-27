@@ -1,7 +1,4 @@
-version: v1beta1
-build:
-  roots:
-    - .
+version: v1
 lint:
   use:
     - DEFAULT
@@ -37,4 +34,5 @@ lint:
     RPC_RESPONSE_STANDARD_NAME:
       - api/models/*
 deps:
+  - buf.build/grpc-ecosystem/grpc-gateway
   - buf.build/googleapis/googleapis
